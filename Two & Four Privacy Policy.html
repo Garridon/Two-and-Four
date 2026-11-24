@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two & Four Privacy Policy</title>
+<style>
+/* VOICE: plain, formal, trustworthy; a well-set policy page
+   IDEA: a printed owner's-manual insert
+   PICTURE: none needed; a small header mark in the app's teal
+   COLOUR and TYPE: white/near-black, app teal #1F6B5C accent; Inter
+   LAYOUT: one centred column, 68ch */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#121615);--ink:light-dark(#16201d,#e4ebe8);--muted:light-dark(#4b5a55,#a8b7b1);--accent:light-dark(#1F6B5C,#8BD6C1);--rule:light-dark(#dfe6e3,#2a3330)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:clip}
+main{max-width:68ch;margin:0 auto;padding:clamp(28px,5vw,64px) max(5vw,18px) 64px}
+.mark{display:flex;align-items:center;gap:12px;color:var(--accent);font-weight:700;font-size:17px;margin-bottom:28px}
+.mark svg{width:40px;height:40px;flex:none}
+h1{font-size:clamp(32px,5vw,44px);line-height:1.08;margin:0 0 8px;text-wrap:balance}
+.date{color:var(--muted);margin:0 0 28px}
+.lead{font-size:19px;border-left:4px solid var(--accent);padding:4px 0 4px 16px;margin:0 0 32px}
+h2{font-size:22px;line-height:1.25;margin:36px 0 10px;padding-top:20px;border-top:1px solid var(--rule)}
+ul{padding-left:1.2em}li{margin:6px 0}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:2px}
+table{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0 4px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--rule)}
+th{font-weight:600;color:var(--muted);font-size:14px}
+footer{margin-top:44px;color:var(--muted);font-size:14px}
+@media(max-width:600px){table{font-size:14px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px;border-bottom:1px solid var(--rule)}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:7.5em}.stack td::before{content:attr(data-l);float:inline-start;width:7em;margin-inline-start:-7.5em;color:var(--muted);font-size:13px;font-weight:600}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true">
+    <svg viewBox="0 0 108 108"><rect width="108" height="108" rx="26" fill="#1F6B5C"/><circle cx="54" cy="54" r="29.5" fill="none" stroke="#fff" stroke-width="3.4"/><g transform="rotate(-60 54 54)"><rect x="52.2" y="38" width="3.6" height="18" fill="#FFC15E"/><circle cx="54" cy="39.5" r="4.3" fill="#FFC15E"/></g><g transform="rotate(60 54 54)"><rect x="52.2" y="32" width="3.6" height="24" fill="#FFC15E"/><circle cx="54" cy="33.5" r="4.3" fill="#FFC15E"/></g><circle cx="54" cy="54" r="3.6" fill="#fff"/></svg>
+    Two &amp; Four
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective November 24, 2026</p>
+
+  <p class="lead">Two &amp; Four does not collect, sell or share your personal information. There is no account, no advertising and no analytics or tracking. Everything you enter stays on your phone.</p>
+
+  <h2>What the app stores, and where</h2>
+  <p>Your vehicles, service records, notes, costs, photos, custom services and settings are saved only in the app's private storage on your device. The developer never receives them.</p>
+  <ul>
+    <li>Uninstalling the app deletes this data from the device.</li>
+    <li>If you have turned on Android's own backup to your Google account, Android may include the app's data in that backup. It is stored in your Google account under Google's terms, and the developer cannot access it.</li>
+    <li>Photos you take or pick are copied into the app's private storage. The app does not read the rest of your photo library.</li>
+  </ul>
+
+  <h2>When the app goes online</h2>
+  <p>The app only connects to the internet when you tap a feature that needs it. It then contacts the service below directly, sending only what that lookup needs. Nothing identifies you, beyond the network address any internet request carries.</p>
+  <table class="stack">
+    <thead><tr><th>Feature</th><th>Service contacted</th><th>What is sent</th></tr></thead>
+    <tbody>
+      <tr><td>Fill details from VIN</td><td>US National Highway Traffic Safety Administration (NHTSA) vPIC (<a href="https://www.nhtsa.gov/about-nhtsa/privacy-policy">privacy policy</a>)</td><td>The VIN you entered</td></tr>
+      <tr><td>Look up tire &amp; fuel tank size</td><td>411 Vehicle Data API</td><td>The vehicle's year, make and model</td></tr>
+      <tr><td>Find photos</td><td>Wikimedia Commons (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">privacy policy</a>)</td><td>Your search words, such as "2019 Honda Civic"; the photo you choose is downloaded</td></tr>
+      <tr><td>Search the web buttons</td><td>Your web browser</td><td>A search for your vehicle and the spec you asked about</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Camera and photos</h2>
+  <p>The camera opens through your phone's camera app only when you tap Take photo. Gallery photos come through Android's photo picker, which shares only the photos you choose. The app asks for no camera, location, contacts or storage permission.</p>
+
+  <h2>Import and export</h2>
+  <p>Import reads only the files you pick. Export writes a .zip file to the place you choose, such as your Downloads folder or a cloud drive. What happens to that file afterward is up to you and the storage you picked.</p>
+
+  <h2>Children</h2>
+  <p>Two &amp; Four is a vehicle maintenance tool for adults and is not directed at children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: use the developer email address shown on the Two &amp; Four listing on Google Play.</p>
+
+  <footer>Two &amp; Four · vehicle maintenance log for cars and motorcycles</footer>
+</main>
+</body>
+</html>
